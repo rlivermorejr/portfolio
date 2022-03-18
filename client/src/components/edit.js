@@ -51,6 +51,7 @@ export default function Edit() {
 			position: form.position,
 			level: form.level,
 		};
+		console.log(editedPerson);
 
 		// This will send a post request to update the data in the database.
 		await fetch(`http://localhost:5000/update/${params.id}`, {
