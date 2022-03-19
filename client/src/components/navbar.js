@@ -2,6 +2,8 @@ import React from "react";
 
 // We import bootstrap to make our application look better.
 import "bootstrap/dist/css/bootstrap.css";
+// We import our own stylesheet.
+import "./style/navbar.css";
 
 // We import NavLink to utilize the react router.
 import { NavLink } from "react-router-dom";
@@ -33,7 +35,13 @@ export default function Navbar() {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav ml-auto">
 						<li className="nav-item">
-							<NavLink className="nav-link" to="/create">
+							<NavLink className="nav-link" to="/">
+								Home
+							</NavLink>
+							<NavLink className="nav-link" to="/records">
+								MongoDB Records
+							</NavLink>
+							<NavLink className="nav-link" to="/records/create">
 								Create Record
 							</NavLink>
 						</li>

@@ -24,17 +24,22 @@ export default function Create() {
 		const newPerson = { ...form };
 
 		await fetch("http://localhost:5000/record/add", {
+			// Defines the request as a post request.
 			method: "POST",
+			// Sets the header to be JSON.
 			headers: {
 				"Content-Type": "application/json",
 			},
+			// This converts the object to a string and sends it to the body.
 			body: JSON.stringify(newPerson),
 		}).catch((error) => {
+			// If there is an error, we'll display it.
 			window.alert(error);
 			return;
 		});
-
+		// This sets the form to empty.
 		setForm({ name: "", position: "", level: "" });
+		// This will redirect to the homepage after the record is added.
 		navigate("/");
 	}
 
