@@ -1,0 +1,32 @@
+[
+	{
+		"userId": 1,
+		"id": 1,
+		"title": "Clean bedroom",
+		"completed": true
+	},
+	{
+		"userId": 1,
+		"id": 2,
+		"title": "Wash car, wipe down interior",
+		"completed": false
+	},
+	{
+		"userId": 1,
+		"id": 3,
+		"title": "Wax on, wax on, wax on...... oh wax off.",
+		"completed": false
+	},
+	{
+		"userId": 1,
+		"id": 4,
+		"title": "Create react app with django backend",
+		"completed": true
+	},
+	{
+		"userId": 1,
+		"id": 5,
+		"title": "Become the best kangaroo rider in Canada",
+		"completed": false
+	}
+]

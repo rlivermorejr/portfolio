@@ -1,5 +1,5 @@
-import Team from "./Team.js";
-import Venue from "./Venue.js";
+import Team from "./team.js";
+import Venue from "./venue.js";
 import Owls from "../img/birds.png";
 import Snakes from "../img/snake.png";
 
