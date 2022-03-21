@@ -40,7 +40,7 @@ export default function Create() {
 		// This sets the form to empty.
 		setForm({ name: "", position: "", level: "" });
 		// This will redirect to the homepage after the record is added.
-		navigate("/");
+		navigate("/records");
 	}
 
 	// This following section will display the form that takes the input from the user.

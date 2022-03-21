@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./style/main.css";
 
 // This will be the landing page for our application.
 export default function HomePage() {
