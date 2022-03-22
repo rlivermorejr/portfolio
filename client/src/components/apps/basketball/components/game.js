@@ -7,11 +7,11 @@ function Game(props) {
 	return (
 		<div>
 			<Venue venue="Rabbit Hole Arena" />
-			<div class="main">
-				<p class="home">
+			<div className="main">
+				<p className="home">
 					<Team name="Snakes" logo={Snakes} />
 				</p>
-				<p class="visitor">
+				<p className="visitor">
 					<Team name="Owls" logo={Owls} />
 				</p>
 			</div>

@@ -1,5 +1,4 @@
 import Game from "./components/game.js";
-import "../../style/gameStyle.css";
 
 function Basketball() {
 	return (

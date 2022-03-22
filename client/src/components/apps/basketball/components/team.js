@@ -1,6 +1,7 @@
 import React from "react";
 import Swish from "../sounds/Swish.wav";
 import Brick from "../sounds/Back+Board.wav";
+import "../../../style/gameStyle.css";
 
 class Team extends React.Component {
 	constructor(props) {
@@ -36,7 +37,7 @@ class Team extends React.Component {
 			percentage = this.state.score / this.state.shots;
 		}
 		return (
-			<div>
+			<div className="teams">
 				<h1>{this.props.name}</h1>
 				<img src={this.props.logo} alt="logo" />
 				<button id="hb" onClick={this.shotTaken}>
