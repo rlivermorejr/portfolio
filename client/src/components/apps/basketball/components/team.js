@@ -1,7 +1,6 @@
 import React from "react";
 import Swish from "../sounds/Swish.wav";
 import Brick from "../sounds/Back+Board.wav";
-import "../../../style/gameStyle.css";
 
 class Team extends React.Component {
 	constructor(props) {

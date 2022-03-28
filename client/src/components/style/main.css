@@ -3,3 +3,14 @@
 	padding: 20px;
 	text-align: center;
 }
+.card__github {
+	display: flex;
+	justify-content: left;
+}
+
+.root {
+	border: 2px inset grey;
+	width: 150px;
+	margin: auto;
+	text-align: center;
+}

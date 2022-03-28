@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 // import stylesheet
-import "../../style/diceStyle.css";
+// import "./styles/diceStyle.module.css";
 
 export default function DiceRoller() {
 	const [freq, setFreq] = useState(0);
-	// const [count, setCount] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+	const [count, setCount] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
 	function rollDie(e) {
 		e.preventDefault();
@@ -23,43 +23,43 @@ export default function DiceRoller() {
 	function rollDie3(e) {
 		e.preventDefault();
 		let count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+		let chart = document.getElementById("chart");
 		for (let i = 1; i < 1001; i++) {
 			let int = Math.ceil(Math.random() * 6) + Math.ceil(Math.random() * 6);
 			count[int - 2] = count[int - 2] + 1;
 			setFreq(count);
+			chart.innerHTML = `${i}: ${count[i]}`;
 		}
-		let array = document.getElementById("f2");
-		array.innerHTML = "2: " + count[0];
 
-		let array2 = document.getElementById("f3");
-		array2.innerHTML = "3: " + count[1];
+		// let array2 = document.getElementById("f3");
+		// array2.innerHTML = "3: " + count[1];
 
-		let array3 = document.getElementById("f4");
-		array3.innerHTML = "4: " + count[2];
+		// let array3 = document.getElementById("f4");
+		// array3.innerHTML = "4: " + count[2];
 
-		let array4 = document.getElementById("f5");
-		array4.innerHTML = "5: " + count[3];
+		// let array4 = document.getElementById("f5");
+		// array4.innerHTML = "5: " + count[3];
 
-		let array5 = document.getElementById("f6");
-		array5.innerHTML = "6: " + count[4];
+		// let array5 = document.getElementById("f6");
+		// array5.innerHTML = "6: " + count[4];
 
-		let array6 = document.getElementById("f7");
-		array6.innerHTML = "7: " + count[5];
+		// let array6 = document.getElementById("f7");
+		// array6.innerHTML = "7: " + count[5];
 
-		let array7 = document.getElementById("f8");
-		array7.innerHTML = "8: " + count[6];
+		// let array7 = document.getElementById("f8");
+		// array7.innerHTML = "8: " + count[6];
 
-		let array8 = document.getElementById("f9");
-		array8.innerHTML = "9: " + count[7];
+		// let array8 = document.getElementById("f9");
+		// array8.innerHTML = "9: " + count[7];
 
-		let array9 = document.getElementById("f10");
-		array9.innerHTML = "10: " + count[8];
+		// let array9 = document.getElementById("f10");
+		// array9.innerHTML = "10: " + count[8];
 
-		let array10 = document.getElementById("f11");
-		array10.innerHTML = "11: " + count[9];
+		// let array10 = document.getElementById("f11");
+		// array10.innerHTML = "11: " + count[9];
 
-		let array11 = document.getElementById("f12");
-		array11.innerHTML = "12: " + count[10];
+		// let array11 = document.getElementById("f12");
+		// array11.innerHTML = "12: " + count[10];
 	}
 
 	return (
@@ -94,8 +94,7 @@ export default function DiceRoller() {
 					<div id="f12"></div>
 				</div>
 			</div>
-			<div id="myChart"></div>
-			<div id="d1"></div>
+			<div id="chart"></div>
 		</div>
 	);
 }

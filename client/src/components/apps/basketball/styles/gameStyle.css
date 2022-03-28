@@ -10,12 +10,15 @@ div.main {
 	align-items: flex-start;
 	flex-grow: 3;
 }
+
 h1 {
 	text-align: center;
 }
+
 .text {
 	text-align: center;
 }
+
 .teams {
 	width: 70px;
 	height: 60px;
