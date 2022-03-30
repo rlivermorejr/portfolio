@@ -8,6 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 
+import "./style.css";
+
 class GitHubCard extends React.Component {
 	constructor(props) {
 		super(props);
@@ -33,15 +35,15 @@ class GitHubCard extends React.Component {
 
 	render() {
 		return (
-			<div className="App">
+			<div className="card__container">
 				<Accordion>
 					<AccordionSummary>
-						<Button variant="outlined" onClick={this.handleToggle.bind(this)} disableElevation>
-							GET USER
+						<Button id="button__github" variant="outlined" onClick={this.handleToggle.bind(this)} disableElevation>
+							GitHub
 						</Button>
 					</AccordionSummary>
-					<Card className="root">
-						<CardMedia style={{ height: 150, width: 150 }} image={this.state.user.avatar_url} title="Github Avatar" />
+					<Card className="card__github">
+						<CardMedia style={{ height: 200, width: 200 }} image={this.state.user.avatar_url} title="Github Avatar" />
 						<CardContent>
 							<Typography variant="body2" color="textSecondary" component="p">
 								User: {this.state.user.login}

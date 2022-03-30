@@ -4,6 +4,7 @@ import GitHubCard from "../components/apps/githubCard/index";
 import "./style/main.css";
 
 // This will be the landing page for our application.
+
 export default function HomePage() {
 	return (
 		<div>

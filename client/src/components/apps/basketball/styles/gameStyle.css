@@ -1,4 +1,4 @@
-.App {
+.App__Bball {
 	text-align: center;
 }
 div.main {
@@ -10,16 +10,13 @@ div.main {
 	align-items: flex-start;
 	flex-grow: 3;
 }
-
-h1 {
+h1#teamName {
 	text-align: center;
 }
-
 .text {
 	text-align: center;
 }
-
-.teams {
+img#logo {
 	width: 70px;
 	height: 60px;
 	display: block;
@@ -27,8 +24,7 @@ h1 {
 	margin-right: auto;
 	padding-bottom: 10px;
 }
-
-button {
+button#hb {
 	margin: 0 auto;
 	display: block;
 }

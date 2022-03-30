@@ -1,11 +1,9 @@
 import React from "react";
 
-function Venue(props) {
+export default function Venue(props) {
 	return (
 		<div>
-			<h1>Welcome to {props.venue}!</h1>
+			<h1 className="header">Welcome to {props.venue}!</h1>
 		</div>
 	);
 }
-
-export default Venue;

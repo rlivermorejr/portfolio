@@ -3,7 +3,7 @@ import Venue from "./venue.js";
 import Owls from "../img/birds.png";
 import Snakes from "../img/snake.png";
 
-function Game(props) {
+export default function Game(props) {
 	return (
 		<div>
 			<Venue venue="Rabbit Hole Arena" />
@@ -18,5 +18,3 @@ function Game(props) {
 		</div>
 	);
 }
-
-export default Game;

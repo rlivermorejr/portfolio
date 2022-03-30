@@ -37,8 +37,8 @@ class Team extends React.Component {
 		}
 		return (
 			<div className="teams">
-				<h1>{this.props.name}</h1>
-				<img src={this.props.logo} alt="logo" />
+				<h3 id="teamName">{this.props.name}</h3>
+				<img id="logo" src={this.props.logo} alt="logo" />
 				<button id="hb" onClick={this.shotTaken}>
 					Take Shot
 				</button>

@@ -1,12 +1,11 @@
 import Game from "./components/game.js";
+
 import "./styles/gameStyle.css";
 
-function Basketball() {
+export default function Basketball() {
 	return (
-		<div className="App">
+		<div className="App__Bball">
 			<Game />
 		</div>
 	);
 }
-
-export default Basketball;
