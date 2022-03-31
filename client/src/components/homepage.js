@@ -7,8 +7,9 @@ import Paper from "@material-ui/core/Paper";
 
 import GitHubCard from "./apps/githubCard/index";
 import Bio from "./apps/bio/index";
+import AnimatedTypingComponent from "./anim/headerType";
 
-import "./style/main.css";
+import "./style/homepage.css";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -29,9 +30,7 @@ export default function HomePage() {
 	return (
 		<div>
 			<div id="homeHeader">
-				<span id="header">Hello, I'm Russell Livermore</span>
-				<br />
-				<span id="wel">Welcome to my portfolio!</span>
+				<AnimatedTypingComponent title={"Hello I'm Russell Livermore"} title2={"Welcome to my portfolio"} />
 			</div>
 			<div className={classes.root}>
 				<Box>

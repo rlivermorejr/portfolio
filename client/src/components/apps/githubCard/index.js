@@ -10,7 +10,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 
 import "./style.css";
 
-class GitHubCard extends React.Component {
+export default class GitHubCard extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -39,7 +39,7 @@ class GitHubCard extends React.Component {
 				<Accordion>
 					<AccordionSummary>
 						<Button id="button__github" variant="outlined" onClick={this.handleToggle.bind(this)} disableElevation>
-							GitHub
+							GitHub Info
 						</Button>
 					</AccordionSummary>
 					<Card className="card__github">
@@ -67,5 +67,3 @@ class GitHubCard extends React.Component {
 		);
 	}
 }
-
-export default GitHubCard;
