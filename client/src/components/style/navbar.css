@@ -18,6 +18,10 @@ span.nav-link {
 	border-radius: 0.5rem;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
-	margin-right: 1rem;
 	margin-top: 10px;
+	margin-right: 1rem;
+}
+nav.navbar {
+	display: flex;
+	justify-content: flex-end;
 }

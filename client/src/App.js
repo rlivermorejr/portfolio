@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import HomePage from "./components/homepage";
 import Navbar from "./components/navbar";
@@ -11,7 +10,7 @@ import DiceRoller from "./components/apps/diceroller/diceRoller";
 import Basketball from "./components/apps/basketball/basketball";
 import TodoApp from "./components/apps/todo/todoApp";
 
-function App() {
+export default function App() {
 	return (
 		<div>
 			<Navbar />
@@ -27,5 +26,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;

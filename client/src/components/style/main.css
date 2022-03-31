@@ -1,4 +1,4 @@
-.header {
+#homeHeader {
 	background-color: #f1f1f1;
 	padding: 20px;
 	text-align: center;
@@ -12,5 +12,8 @@
 	border: 2px inset grey;
 	width: 150px;
 	margin: auto;
+	text-align: center;
+}
+#wel {
 	text-align: center;
 }

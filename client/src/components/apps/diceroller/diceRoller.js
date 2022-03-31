@@ -41,6 +41,7 @@ export default function DiceRoller() {
 
 	return (
 		<div>
+			<h3 className="header">Dice Roller</h3>
 			<div id="outerDiv">
 				<div class="firstRoll">
 					<input type="button" value="Roll One Die!" onClick={rollDie} class="button" />
