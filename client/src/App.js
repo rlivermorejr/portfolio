@@ -16,8 +16,8 @@ import TodoApp from "./components/apps/todo/todoApp";
 export default function App() {
 	return (
 		<div>
-			<motion.div exit={{ opacity: 0 }}>
-				<AnimatePresence exitBeforeEnter>
+			<AnimatePresence exitBeforeEnter>
+				<motion.div exit={{ opacity: 0 }}>
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<HomePage />} />
@@ -28,8 +28,8 @@ export default function App() {
 						<Route path="/records/edit/:id" element={<Edit />} />
 						<Route path="/records/create" element={<Create />} />
 					</Routes>
-				</AnimatePresence>
-			</motion.div>
+				</motion.div>
+			</AnimatePresence>
 		</div>
 	);
 }

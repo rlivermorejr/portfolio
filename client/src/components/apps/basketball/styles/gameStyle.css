@@ -29,7 +29,7 @@ button#hb {
 	display: block;
 }
 
-.home {
+.homeTeam {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -39,7 +39,7 @@ button#hb {
 	padding: 10px;
 }
 
-.visitor {
+.visitorTeam {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;

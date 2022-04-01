@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import "./style.css";
+
 const Record = (props) => (
 	<tr>
 		<td>{props.record.name}</td>
 		<td>{props.record.position}</td>
 		<td>{props.record.level}</td>
 		<td>
-			<Link className="btn btn-link" to={`/records/edit/${props.record._id}`}>
+			<Link className="btn btn-primary" to={`/records/edit/${props.record._id}`}>
 				Edit
 			</Link>{" "}
-			|
+			|{" "}
 			<button
-				className="btn btn-link"
+				className="btn btn-secondary"
 				onClick={() => {
 					props.deleteRecord(props.record._id);
 				}}
@@ -70,8 +72,13 @@ export default function RecordList() {
 	// This following section will display the table with the records of individuals.
 	return (
 		<div>
+			<img
+				id="mongoLogo"
+				src="https://d3cy9zhslanhfa.cloudfront.net/media/3800C044-6298-4575-A05D5C6B7623EE37/4B45D0EC-3482-4759-82DA37D8EA07D229/webimage-8A27671A-8A53-45DC-89D7BF8537F15A0D.png"
+				alt="mongodb logo"
+			></img>
 			<h3>Record List</h3>
-			<table className="table table-striped" style={{ marginTop: 20 }}>
+			<table className="table table-striped" id="mongoList">
 				<thead>
 					<tr>
 						<th>Name</th>

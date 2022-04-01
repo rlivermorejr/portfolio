@@ -9,6 +9,7 @@
 	cursor: pointer;
 	margin-right: 1rem;
 }
+
 span.nav-link {
 	color: #fff;
 	font-size: 1.2rem;
@@ -20,8 +21,4 @@ span.nav-link {
 	cursor: pointer;
 	margin-top: 10px;
 	margin-right: 1rem;
-}
-nav.navbar {
-	display: flex;
-	justify-content: flex-end;
 }

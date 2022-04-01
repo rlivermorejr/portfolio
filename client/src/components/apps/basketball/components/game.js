@@ -8,10 +8,10 @@ export default function Game(props) {
 		<div>
 			<Venue venue="Rabbit Hole Arena" />
 			<div className="main">
-				<p className="home">
+				<p className="homeTeam">
 					<Team name="Snakes" logo={Snakes} />
 				</p>
-				<p className="visitor">
+				<p className="visitorTeam">
 					<Team name="Owls" logo={Owls} />
 				</p>
 			</div>
