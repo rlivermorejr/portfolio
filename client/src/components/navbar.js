@@ -12,61 +12,76 @@ export default function Navbar() {
 		<div>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav m-auto">
-						<li className="nav-item d-inline-flex j-content-flex-start">
-							<NavLink className="nav-link" to="/">
+					<div class="dropdown">
+						<NavLink className="nav-link" to="/">
+							<button className="btn btn-secondary" type="button" href="/">
 								Home
-							</NavLink>
-						</li>
-						<li className="nav-item dropdown">
-							<span
-								className="nav-link dropdown-toggle"
-								id="navbarDropdown"
-								role="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								MongoDB Records
-							</span>
-							<div className="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a className="dropdown-item" href="/records">
+							</button>
+						</NavLink>
+					</div>
+					<div class="dropdown">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							id="dropdownMenu2"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							MongoDB Records
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+							<NavLink className="dropdown-item" to="/records">
+								<button className="dropdown-item" type="button">
 									Go To Records
-								</a>
-								<a className="dropdown-item" href="/records/create">
+								</button>
+							</NavLink>
+							<NavLink className="dropdown-item" to="/records/create">
+								<button className="dropdown-item" type="button">
 									Create a Record
-								</a>
-								<div className="dropdown-divider"></div>
-								<a className="dropdown-item" target="_blank" href="https://www.mongodb.com" rel="noreferrer noopener">
-									MongoDB Website
-								</a>
-							</div>
-						</li>
-						<li className="nav-item dropdown">
-							<span
-								className="nav-link dropdown-toggle"
-								id="navbarDropdown"
-								role="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
+								</button>
+							</NavLink>
+							<div className="dropdown-divider"></div>
+							<a
+								className="dropdown-item"
+								type="button"
+								target="_blank"
+								href="https://www.mongodb.com"
+								rel="noreferrer"
 							>
-								React Apps
-							</span>
-							<div className="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a className="dropdown-item" href="/react/basketball">
+								MongoDB Website
+							</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							id="dropdownMenu2"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							React Apps
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+							<NavLink className="dropdown-item" to="/react/basketball">
+								<button className="dropdown-item" type="button">
 									Basketball
-								</a>
-								<a className="dropdown-item" href="/react/diceroller">
+								</button>
+							</NavLink>
+							<NavLink className="dropdown-item" to="/react/diceroller">
+								<button className="dropdown-item" type="button">
 									Dice Roller
-								</a>
-								<div className="dropdown-divider"></div>
-								<a className="dropdown-item" href="/react/todo">
+								</button>
+							</NavLink>
+							<NavLink className="dropdown-item" to="/react/todo">
+								<button className="dropdown-item" type="button">
 									Todo App
-								</a>
-							</div>
-						</li>
-					</ul>
+								</button>
+							</NavLink>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</div>
