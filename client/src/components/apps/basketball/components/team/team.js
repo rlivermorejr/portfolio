@@ -1,8 +1,9 @@
 import React from "react";
-import Swish from "../sounds/Swish.wav";
-import Brick from "../sounds/Back+Board.wav";
+import Swish from "../../sounds/Swish.wav";
+import Brick from "../../sounds/Back+Board.wav";
 
-import "../styles/gameStyle.css";
+import styles from "./team.module.scss";
+
 class Team extends React.Component {
 	constructor(props) {
 		super(props);
@@ -37,21 +38,23 @@ class Team extends React.Component {
 			percentage = this.state.score / this.state.shots;
 		}
 		return (
-			<div className="teams">
-				<div id="teamName">
-					<b>{this.props.name}</b>
+			<div className={styles.team}>
+				<div className="teams">
+					<div id={styles.teamName}>
+						<b>{this.props.name}</b>
+					</div>
+					<img id={styles.logo} src={this.props.logo} alt="logo" />
+					<button id={styles.hb} onClick={this.shotTaken}>
+						Take Shot
+					</button>
+					<p id={styles.score}>
+						shots: {this.state.shots}
+						<br />
+						score: {this.state.score}
+						<br />
+						shot percentage: {percentage.toFixed(2)}
+					</p>
 				</div>
-				<img id="logo" src={this.props.logo} alt="logo" />
-				<button id="hb" onClick={this.shotTaken}>
-					Take Shot
-				</button>
-				<p id="score">
-					shots: {this.state.shots}
-					<br />
-					score: {this.state.score}
-					<br />
-					shot percentage: {percentage.toFixed(2)}
-				</p>
 			</div>
 		);
 	}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AnimatedTypingComponent from "../../anim/headerType";
 
 // import stylesheet
-import "./style.css";
+import styles from "./dice.module.scss";
 
 export default function DiceRoller() {
 	const [freq, setFreq] = useState(0);
@@ -41,29 +41,29 @@ export default function DiceRoller() {
 	}
 
 	return (
-		<div>
-			<div className="homeHeader">
+		<div className={styles.dice}>
+			<div className={styles.homeHeader}>
 				<AnimatedTypingComponent title={`Welcome to the dice roller!`} />
 			</div>
-			<div id="outerDiv">
-				<div class="firstRoll">
-					<input type="button" value="Roll One Die!" onClick={rollDie} class="button" />
+			<div id={styles.outerDiv}>
+				<div class={styles.firstRoll}>
+					<input type="button" value="Roll One Die!" onClick={rollDie} className={styles.rollButton} />
 					<input type="text" id="roll1" name="roll1" />
 				</div>
-				<div class="secondRoll">
-					<button type="submit" onClick={rollDie2} class="button">
+				<div class={styles.secondRoll}>
+					<button type="submit" onClick={rollDie2} className={styles.rollButton}>
 						Roll Two Dice!
 					</button>
 					<input type="text" id="roll2" name="roll2" />
 				</div>
 			</div>
-			<div id="outerDiv2">
-				<div class="thirdRoll">
-					<input type="button" value="Roll the Dice 1000 Times!" onClick={rollDie3} class="button" />
+			<div id={styles.outerDiv2}>
+				<div className={styles.thirdRoll}>
+					<input type="button" value="Roll the Dice 1000 Times!" onClick={rollDie3} className={styles.rollButton} />
 				</div>
 			</div>
-			<div id="freq"></div>
-			<div id="chart"></div>
+			<div id={styles.freq}></div>
+			<div id={styles.chart}></div>
 		</div>
 	);
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 // We import our own stylesheet.
-import "./style/navbar.css";
+import styles from "./navbar.module.scss";
 
 // We import NavLink to utilize the react router.
 import { NavLink } from "react-router-dom";
@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 // Here, we display our Navbar
 export default function Navbar() {
 	return (
-		<div>
+		<div className={styles.navbar}>
 			<nav className="navbar navbar-expand-sm navbar-light bg-light">
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<div className="dropdown">

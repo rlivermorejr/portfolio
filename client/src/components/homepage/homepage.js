@@ -5,11 +5,11 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 
-import GitHubCard from "./apps/githubCard/index";
-import Bio from "./apps/bio/index";
-import AnimatedTypingComponent from "./anim/headerType";
+import GitHubCard from "../apps/githubCard/index";
+import Bio from "../apps/bio/index";
+import AnimatedTypingComponent from "../anim/headerType";
 
-import "./style/homepage.css";
+import styles from "./homepage.module.scss";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -28,8 +28,8 @@ export default function HomePage() {
 	const classes = useStyles();
 
 	return (
-		<div>
-			<div className="homeHeader">
+		<div className={styles.homepage}>
+			<div className={styles.homeHeader}>
 				<AnimatedTypingComponent title={"Hello I'm Russell Livermore"} title2={"Welcome to my portfolio"} />
 			</div>
 			<div className={classes.root}>

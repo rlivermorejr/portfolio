@@ -4,8 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 
-import HomePage from "./components/homepage";
-import Navbar from "./components/navbar";
+import HomePage from "./components/homepage/homepage";
+import Navbar from "./components/navbar/navbar";
 import RecordList from "./components/records/recordList";
 import Edit from "./components/records/edit";
 import Create from "./components/records/create";

@@ -1,7 +1,7 @@
 import React from "react";
 import Typing from "react-typing-animation";
 
-import "../style/homepage.css";
+import styles from "../homepage/homepage.module.scss";
 
 export default function AnimatedTypingComponent(props) {
 	const { title, title2 } = props;
@@ -13,18 +13,17 @@ export default function AnimatedTypingComponent(props) {
 			return (
 				<>
 					<Typing.Delay ms={1000} />
-					<span id="wel">{title2}</span>
+					<span id={styles.wel}>{title2}</span>
 				</>
 			);
 		}
 	};
 
 	return (
-		<Typing>
-			<span id="header">{title}</span>
+		<Typing className={styles.homepage}>
+			<span id={styles.header}>{title}</span>
 			<br />
-			<Typing.Delay ms={1000} />
-			<span id="wel">{title2}</span>
+			<span id={styles.wel}>{checkTitle2({ title2 })}</span>
 		</Typing>
 	);
 }
