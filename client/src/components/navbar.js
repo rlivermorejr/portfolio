@@ -10,18 +10,18 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light">
+			<nav className="navbar navbar-expand-sm navbar-light bg-light">
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<div class="dropdown">
+					<div className="dropdown">
 						<NavLink className="nav-link" to="/">
 							<button className="btn btn-secondary" type="button" href="/">
 								Home
 							</button>
 						</NavLink>
 					</div>
-					<div class="dropdown">
+					<div className="dropdown">
 						<button
-							class="btn btn-secondary dropdown-toggle"
+							className="btn btn-secondary dropdown-toggle"
 							type="button"
 							id="dropdownMenu2"
 							data-toggle="dropdown"
@@ -53,9 +53,9 @@ export default function Navbar() {
 							</a>
 						</div>
 					</div>
-					<div class="dropdown">
+					<div className="dropdown">
 						<button
-							class="btn btn-secondary dropdown-toggle"
+							className="btn btn-secondary dropdown-toggle"
 							type="button"
 							id="dropdownMenu2"
 							data-toggle="dropdown"
@@ -64,7 +64,7 @@ export default function Navbar() {
 						>
 							React Apps
 						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<div className="dropdown-menu" aria-labelledby="dropdownMenu2">
 							<NavLink className="dropdown-item" to="/react/basketball">
 								<button className="dropdown-item" type="button">
 									Basketball
@@ -75,9 +75,9 @@ export default function Navbar() {
 									Dice Roller
 								</button>
 							</NavLink>
-							<NavLink className="dropdown-item" to="/react/todo">
+							<NavLink className="dropdown-item" to="/react/">
 								<button className="dropdown-item" type="button">
-									Todo App
+									Pending....
 								</button>
 							</NavLink>
 						</div>

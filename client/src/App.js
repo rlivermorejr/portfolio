@@ -11,7 +11,6 @@ import Edit from "./components/records/edit";
 import Create from "./components/records/create";
 import DiceRoller from "./components/apps/diceroller/diceRoller";
 import Basketball from "./components/apps/basketball/basketball";
-import TodoApp from "./components/apps/todo/todoApp";
 
 export default function App() {
 	return (
@@ -19,11 +18,11 @@ export default function App() {
 			<AnimatePresence exitBeforeEnter>
 				<motion.div exit={{ opacity: 0 }}>
 					<Navbar />
+
 					<Routes>
 						<Route path="/" element={<HomePage />} />
 						<Route path="/react/diceroller" element={<DiceRoller />} />
 						<Route path="/react/basketball" element={<Basketball />} />
-						<Route path="/react/todo" element={<TodoApp />} />
 						<Route path="/records" element={<RecordList />} />
 						<Route path="/records/edit/:id" element={<Edit />} />
 						<Route path="/records/create" element={<Create />} />

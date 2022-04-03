@@ -6,7 +6,7 @@ import "../../../style/homepage.css";
 
 export default function Venue(props) {
 	return (
-		<div id="homeHeader">
+		<div className="homeHeader">
 			<AnimatedTypingComponent title={`Welcome to ${props.venue}`} />
 		</div>
 	);

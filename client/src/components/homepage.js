@@ -29,7 +29,7 @@ export default function HomePage() {
 
 	return (
 		<div>
-			<div id="homeHeader">
+			<div className="homeHeader">
 				<AnimatedTypingComponent title={"Hello I'm Russell Livermore"} title2={"Welcome to my portfolio"} />
 			</div>
 			<div className={classes.root}>

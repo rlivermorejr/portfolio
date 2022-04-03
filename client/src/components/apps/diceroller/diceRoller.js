@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import AnimatedTypingComponent from "../../anim/headerType";
 
 // import stylesheet
-// import "./styles/diceStyle.module.css";
+import "./style.css";
 
 export default function DiceRoller() {
 	const [freq, setFreq] = useState(0);
@@ -30,18 +31,20 @@ export default function DiceRoller() {
 			let int = Math.ceil(Math.random() * 6) + Math.ceil(Math.random() * 6);
 			count[int - 2] = count[int - 2] + 1;
 			result.push(count[int - 2]);
-			document.getElementById("freq").innerText = freq;
+			document.getElementById("freq").innerText = result;
 		}
 		for (let i = 0; i < count.length; i++) {
 			let div = document.createElement("div");
-			div.innerHTML = `${i + 2} : ${count[i]}`;
+			div.innerText = `${i + 2} : ${count[i]}`;
 			chart.append(div);
 		}
 	}
 
 	return (
 		<div>
-			<h3 className="header">Dice Roller</h3>
+			<div className="homeHeader">
+				<AnimatedTypingComponent title={`Welcome to the dice roller!`} />
+			</div>
 			<div id="outerDiv">
 				<div class="firstRoll">
 					<input type="button" value="Roll One Die!" onClick={rollDie} class="button" />
