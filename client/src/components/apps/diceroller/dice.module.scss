@@ -1,47 +1,43 @@
 .dice {
-.game_container {
-	background-color: floralwhite;
-}
-
-#outerDiv {
-	text-align: center;
-	padding-top: 10px;
-}
-
-.firstRoll {
-	border: 2px inset rgb(209, 178, 0);
-	padding: 5px;
-	display: inline-block;
-}
-.secondRoll {
-	border: 2px inset rgb(209, 178, 0);
-	padding: 5px;
-	display: inline-block;
-}
-
-#outerDiv2 {
-	text-align: center;
-	padding-top: 10px;
-}
-#rollFreq {
-	padding-top: 10px;
-}
-.thirdRoll {
-	border: 2px inset rgb(209, 178, 0);
-	padding: 5px;
-	display: inline-block;
-}
-.rollButton {
-	color: crimson;
-	background-color: white;
-	border-radius: 5px;
-}
-
-#myChart {
-	background-color: white;
-	border: 2px outset grey;
-	width: 100px;
-}
+	.game_container {
+		background-color: floralwhite;
+	}
+	#outerDiv {
+		text-align: center;
+		padding-top: 10px;
+	}
+	.firstRoll {
+		border: 2px inset rgb(209, 178, 0);
+		padding: 5px;
+		display: inline-block;
+	}
+	.secondRoll {
+		border: 2px inset rgb(209, 178, 0);
+		padding: 5px;
+		display: inline-block;
+	}
+	#outerDiv2 {
+		text-align: center;
+		padding-top: 10px;
+	}
+	#rollFreq {
+		padding-top: 10px;
+	}
+	.thirdRoll {
+		border: 2px inset rgb(209, 178, 0);
+		padding: 5px;
+		display: inline-block;
+	}
+	.rollButton {
+		color: crimson;
+		background-color: white;
+		border-radius: 5px;
+	}
+	#myChart {
+		background-color: white;
+		border: 2px outset grey;
+		width: 100px;
+	}
 	div.homeHeader {
 		background-color: #f1f1f1;
 		padding: 20px;

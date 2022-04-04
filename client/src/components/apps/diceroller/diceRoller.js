@@ -8,6 +8,10 @@ export default function DiceRoller() {
 	const [freq, setFreq] = useState(0);
 	// const [count, setCount] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
+	function counter() {
+		setFreq(freq + 1);
+	}
+
 	function rollDie(e) {
 		e.preventDefault();
 		let num1 = Math.ceil(Math.random() * 6);
@@ -24,19 +28,30 @@ export default function DiceRoller() {
 
 	function rollDie3(e) {
 		e.preventDefault();
+		let chart = document.querySelector(".chart");
 		let count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-		let chart = document.getElementById("chart");
-		let result = [];
-		for (let i = 1; i < 1001; i++) {
-			let int = Math.ceil(Math.random() * 6) + Math.ceil(Math.random() * 6);
-			count[int - 2] = count[int - 2] + 1;
-			result.push(count[int - 2]);
-			document.getElementById("freq").innerText = result;
-		}
-		for (let i = 0; i < count.length; i++) {
-			let div = document.createElement("div");
-			div.innerText = `${i + 2} : ${count[i]}`;
-			chart.append(div);
+		// if statement to check if dice has already been rolled
+		if (chart.innerHTML === "") {
+			// loop to roll the dice and append results to count array
+			for (let i = 1; i < 1001; i++) {
+				let int = Math.ceil(Math.random() * 6) + Math.ceil(Math.random() * 6);
+				count[int - 2] = count[int - 2] + 1;
+			}
+			counter();
+			// loop to create divs and append counts to chart
+			for (let i = 0; i < count.length; i++) {
+				chart.innerHTML += `<div className="result">${i + 2}: ${count[i]}</div>`;
+			}
+		} else {
+			chart.innerHTML = "";
+			for (let i = 1; i < 1001; i++) {
+				let int = Math.ceil(Math.random() * 6) + Math.ceil(Math.random() * 6);
+				count[int - 2] = count[int - 2] + 1;
+			}
+			counter();
+			for (let i = 0; i < count.length; i++) {
+				chart.innerHTML += `<div className="result">${i + 2}: ${count[i]}</div>`;
+			}
 		}
 	}
 
@@ -62,8 +77,10 @@ export default function DiceRoller() {
 					<input type="button" value="Roll the Dice 1000 Times!" onClick={rollDie3} className={styles.rollButton} />
 				</div>
 			</div>
-			<div id={styles.freq}></div>
-			<div id={styles.chart}></div>
+			<div id={styles.results}>
+				<div id={styles.freq}>Times rolled: {freq}</div>
+				<div id={styles.myChart} className="chart"></div>
+			</div>
 		</div>
 	);
 }
