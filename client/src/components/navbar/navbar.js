@@ -5,6 +5,7 @@ import styles from "./navbar.module.scss";
 
 // We import NavLink to utilize the react router.
 import { NavLink } from "react-router-dom";
+import { Dropdown } from "react-bootstrap";
 
 // Here, we display our Navbar
 export default function Navbar() {
@@ -19,69 +20,31 @@ export default function Navbar() {
 							</button>
 						</NavLink>
 					</div>
-					<div className="dropdown">
-						<button
-							className="btn btn-secondary dropdown-toggle"
-							type="button"
-							id="dropdownMenu2"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
+
+					<Dropdown>
+						<Dropdown.Toggle variant="secondary" id="dropdown-basic">
 							MongoDB Records
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-							<NavLink className="dropdown-item" to="/records">
-								<button className="dropdown-item" type="button">
-									Go To Records
-								</button>
-							</NavLink>
-							<NavLink className="dropdown-item" to="/records/create">
-								<button className="dropdown-item" type="button">
-									Create a Record
-								</button>
-							</NavLink>
-							<div className="dropdown-divider"></div>
-							<a
-								className="dropdown-item"
-								type="button"
-								target="_blank"
-								href="https://www.mongodb.com"
-								rel="noreferrer"
-							>
+						</Dropdown.Toggle>
+
+						<Dropdown.Menu>
+							<Dropdown.Item href="/records">Go To Records</Dropdown.Item>
+							<Dropdown.Item href="/records/create">Create a Record</Dropdown.Item>
+							<Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://www.mongodb.com">
 								MongoDB Website
-							</a>
-						</div>
-					</div>
-					<div className="dropdown">
-						<button
-							className="btn btn-secondary dropdown-toggle"
-							type="button"
-							id="dropdownMenu2"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
+							</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
+					<Dropdown>
+						<Dropdown.Toggle variant="secondary" id="dropdown-basic">
 							React Apps
-						</button>
-						<div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-							<NavLink className="dropdown-item" to="/react/basketball">
-								<button className="dropdown-item" type="button">
-									Basketball
-								</button>
-							</NavLink>
-							<NavLink className="dropdown-item" to="/react/diceroller">
-								<button className="dropdown-item" type="button">
-									Dice Roller
-								</button>
-							</NavLink>
-							<NavLink className="dropdown-item" to="/react/">
-								<button className="dropdown-item" type="button">
-									Pending....
-								</button>
-							</NavLink>
-						</div>
-					</div>
+						</Dropdown.Toggle>
+
+						<Dropdown.Menu>
+							<Dropdown.Item href="/react/diceroller">Dice Roller</Dropdown.Item>
+							<Dropdown.Item href="/react/basketball">Basketball</Dropdown.Item>
+							<Dropdown.Item href="/react/">Pending...</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
 				</div>
 			</nav>
 		</div>

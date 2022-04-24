@@ -1,4 +1,9 @@
 .dice {
+	div.homeHeader {
+		background-color: #f1f1f1;
+		padding: 20px;
+		text-align: center;
+	}
 	.game_container {
 		background-color: floralwhite;
 	}
@@ -6,41 +11,60 @@
 		text-align: center;
 		padding-top: 10px;
 	}
-	.firstRoll {
-		border: 2px inset rgb(209, 178, 0);
-		padding: 5px;
-		display: inline-block;
-	}
-	.secondRoll {
-		border: 2px inset rgb(209, 178, 0);
-		padding: 5px;
-		display: inline-block;
-	}
 	#outerDiv2 {
 		text-align: center;
 		padding-top: 10px;
 	}
-	#rollFreq {
-		padding-top: 10px;
-	}
-	.thirdRoll {
-		border: 2px inset rgb(209, 178, 0);
+	.firstRoll {
 		padding: 5px;
 		display: inline-block;
 	}
-	.rollButton {
-		color: crimson;
-		background-color: white;
-		border-radius: 5px;
+	.secondRoll {
+		padding: 5px;
+		display: inline-block;
 	}
-	#myChart {
+	#freq {
+		padding-top: 10px;
+		font-size: 34px;
+		text-align: center;
+	}
+	.thirdRoll {
+		padding: 5px;
+		display: inline-block;
+	}
+
+	#chart {
 		background-color: white;
 		border: 2px outset grey;
-		width: 100px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		padding: 5px;
+		width: 40%;
+		font-size: 30px;
 	}
-	div.homeHeader {
-		background-color: #f1f1f1;
-		padding: 20px;
-		text-align: center;
+	#chart:empty{
+		display:none;
+	}
+	#chart2 {
+		background-color: white;
+		border: 2px outset grey;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		padding: 5px;
+		width: 40%;
+		font-size: 30px;
+		margin-left: 10px;
+	}
+	#chart2:empty {
+		display: none;
+	}
+	#results {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+	.roll1,
+	.roll2 {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 }
