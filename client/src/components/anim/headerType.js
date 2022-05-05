@@ -8,10 +8,10 @@ export default function AnimatedTypingComponent(props) {
 
 	return (
 		<Typing className={styles.homepage}>
-			<p id={styles.header}>{title}</p>
+			<div id={styles.header}>{title}</div>
 
 			<Typing.Delay ms={1000} />
-			<p id={styles.wel}>{title2}</p>
+			<div id={styles.wel}>{title2}</div>
 		</Typing>
 	);
 }

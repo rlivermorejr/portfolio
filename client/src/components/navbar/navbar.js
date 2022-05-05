@@ -42,7 +42,7 @@ export default function Navbar() {
 						<Dropdown.Menu>
 							<Dropdown.Item href="/react/diceroller">Dice Roller</Dropdown.Item>
 							<Dropdown.Item href="/react/basketball">Basketball</Dropdown.Item>
-							<Dropdown.Item href="/react/">Pending...</Dropdown.Item>
+							<Dropdown.Item href="/react/tictactoe">TicTacToe</Dropdown.Item>
 						</Dropdown.Menu>
 					</Dropdown>
 				</div>
