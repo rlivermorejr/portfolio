@@ -6,12 +6,14 @@ import styles from "./tictactoe.module.scss";
 
 const TicTacToe = () => {
 	return (
-		<div className={styles.tictactoe}>
-			<div className={styles.homeHeader}>
-				<AnimatedTypingComponent title={`Welcome to TicTacToe!`} />
+		<>
+			<div className={styles.tictactoe}>
+				<div className={styles.homeHeader}>
+					<AnimatedTypingComponent title={`Welcome to TicTacToe!`} />
+				</div>
+				<Board />
 			</div>
-			<Board />
-		</div>
+		</>
 	);
 };
 
