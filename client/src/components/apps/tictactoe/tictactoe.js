@@ -1,12 +1,15 @@
 import React from "react";
 import Board from "./components/Board.js";
+import AnimatedTypingComponent from "../../anim/headerType";
 
 import styles from "./tictactoe.module.scss";
 
 const TicTacToe = () => {
 	return (
 		<div className={styles.tictactoe}>
-			<h1>Tic Tac Toe</h1>
+			<div className={styles.homeHeader}>
+				<AnimatedTypingComponent title={`Welcome to TicTacToe!`} />
+			</div>
 			<Board />
 		</div>
 	);
