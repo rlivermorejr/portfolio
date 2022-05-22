@@ -10,19 +10,16 @@
     }
   .container {
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+  }
+  .inner {
+    margin-left: 35%;
+    padding: 15px;
+    width: 30%;
     border: 2px inset white;
     box-shadow: 8px 5px 5px grey;
     font-family: "Indie Flower", cursive;
-    width: 50%;
-    margin-left: 25%;
-  }
-  .inner {
-    position: relative;
-    padding: 15px;
-    width: 100%;
     background: no-repeat url("../../../assets/images/chalkboard.jpg");
+    background-position: center;
   }
   .col {
     display: flex;
@@ -35,9 +32,6 @@
     height: 89px;
     border: 1px solid lightgray;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: xxx-large;
     text-transform: capitalize;
     cursor: pointer;

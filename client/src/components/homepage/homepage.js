@@ -6,7 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 
 import GitHubCard from "../apps/githubCard/index";
-import Bio from "../apps/bio/index";
+import Bio from "../apps/bio/bio";
 import AnimatedTypingComponent from "../anim/headerType";
 
 import styles from "./homepage.module.scss";
@@ -46,7 +46,9 @@ export default function HomePage() {
 							</Paper>
 						</Grid>
 						<Grid item xs={9}>
-							<Paper className={classes.columns}>Top 5 Skills</Paper>
+							<Paper id={styles.skills} className={classes.columns}>
+								Skills
+							</Paper>
 						</Grid>
 					</Grid>
 				</Box>

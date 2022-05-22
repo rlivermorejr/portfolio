@@ -12,6 +12,7 @@ import Create from "./components/records/create";
 import DiceRoller from "./components/apps/diceroller/diceRoller";
 import Basketball from "./components/apps/basketball/basketball";
 import TicTacToe from "./components/apps/tictactoe/tictactoe";
+import Resume from "./components/resume/resume";
 
 export default function App() {
 	return (
@@ -22,6 +23,7 @@ export default function App() {
 
 					<Routes>
 						<Route path="/" element={<HomePage />} />
+						<Route path="/resume" element={<Resume />} />
 						<Route path="/react/diceroller" element={<DiceRoller />} />
 						<Route path="/react/basketball" element={<Basketball />} />
 						<Route path="/react/tictactoe" element={<TicTacToe />} />

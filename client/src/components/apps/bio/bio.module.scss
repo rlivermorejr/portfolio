@@ -1,0 +1,35 @@
+.bio {
+	#profilePic {
+		height: 360px;
+		width: 230px;
+		border-radius: 130px;
+	}
+
+	#profilePic img {
+		height: 100%;
+		width: 300px;
+		transition: all 2s ease-in-out;
+	}
+
+	#profilePic:hover img {
+		transform: scale(2, 2);
+		cursor: pointer;
+	}
+	.container {
+		display: flex;
+		flex-direction:	row;
+	}
+	.imageContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		margin-left: 50px;
+		margin-top: 20px;
+	}
+	.bioText {
+		margin-top: 20px;
+		margin-left: 150px;
+		text-align: center;
+	}
+}

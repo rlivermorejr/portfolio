@@ -1,52 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 
 // We import our own stylesheet.
 import styles from "./navbar.module.scss";
 
-// We import NavLink to utilize the react router.
-import { NavLink } from "react-router-dom";
-import { Dropdown } from "react-bootstrap";
+// bootstrap navbar
+import {
+	CNavbar,
+	CContainer,
+	CNavbarBrand,
+	CCollapse,
+	CNavbarToggler,
+	CNavbarNav,
+	CNavItem,
+	CNavLink,
+	CDropdown,
+	CDropdownToggle,
+	CDropdownMenu,
+	CDropdownItem,
+	CDropdownDivider,
+} from "@coreui/bootstrap-react";
 
 // Here, we display our Navbar
 export default function Navbar() {
+	const [visible, setVisible] = useState(false);
+
 	return (
-		<div className={styles.navbar}>
-			<nav className="navbar navbar-expand-sm navbar-light bg-light">
-				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<div className="dropdown">
-						<NavLink className="nav-link" to="/">
-							<button className="btn btn-secondary" type="button" href="/">
-								Home
-							</button>
-						</NavLink>
-					</div>
-
-					<Dropdown>
-						<Dropdown.Toggle variant="secondary" id="dropdown-basic">
-							MongoDB Records
-						</Dropdown.Toggle>
-
-						<Dropdown.Menu>
-							<Dropdown.Item href="/records">Go To Records</Dropdown.Item>
-							<Dropdown.Item href="/records/create">Create a Record</Dropdown.Item>
-							<Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://www.mongodb.com">
-								MongoDB Website
-							</Dropdown.Item>
-						</Dropdown.Menu>
-					</Dropdown>
-					<Dropdown>
-						<Dropdown.Toggle variant="secondary" id="dropdown-basic">
-							React Apps
-						</Dropdown.Toggle>
-
-						<Dropdown.Menu>
-							<Dropdown.Item href="/react/diceroller">Dice Roller</Dropdown.Item>
-							<Dropdown.Item href="/react/basketball">Basketball</Dropdown.Item>
-							<Dropdown.Item href="/react/tictactoe">TicTacToe</Dropdown.Item>
-						</Dropdown.Menu>
-					</Dropdown>
-				</div>
-			</nav>
-		</div>
+		<>
+			<div className={styles.navbar}>
+				<CNavbar expand="lg" colorScheme="light" className="bg-light">
+					<CContainer fluid>
+						<CNavbarBrand href="/">Home</CNavbarBrand>
+						<CNavbarToggler
+							aria-label="Toggle navigation"
+							aria-expanded={visible}
+							onClick={() => setVisible(!visible)}
+						/>
+						<CCollapse className="navbar-collapse" visible={visible}>
+							<CNavbarNav>
+								<CNavItem>
+									<CNavLink href="/resume">Resume</CNavLink>
+								</CNavItem>
+								<CDropdown variant="nav-item" popper={false}>
+									<CDropdownToggle>MongoDB</CDropdownToggle>
+									<CDropdownMenu>
+										<CDropdownItem href="/records">Go To Records</CDropdownItem>
+										<CDropdownItem href="/records/create">Create Record</CDropdownItem>
+										<CDropdownDivider />
+										<CDropdownItem target="_blank" rel="noopener noreferrer" href="https://www.mongodb.com">
+											MongoDB Website
+										</CDropdownItem>
+									</CDropdownMenu>
+								</CDropdown>
+								<CDropdown variant="nav-item" popper={false}>
+									<CDropdownToggle>React Apps</CDropdownToggle>
+									<CDropdownMenu>
+										<CDropdownItem href="/react/diceroller">Dice Roller</CDropdownItem>
+										<CDropdownItem href="/react/basketball">Basketball Game</CDropdownItem>
+										<CDropdownItem href="/react/tictactoe">TicTacToe</CDropdownItem>
+									</CDropdownMenu>
+								</CDropdown>
+							</CNavbarNav>
+						</CCollapse>
+					</CContainer>
+				</CNavbar>
+			</div>
+		</>
 	);
 }
