@@ -52,53 +52,164 @@ export default function HomePage() {
 									<Box>
 										<Grid alt="languages">
 											<h4 className={styles.skillsTitle}>Languages</h4>
-											<img src={require("../../assets/images/html.png")} alt="html" height="100px" width="100px" />
-											<img src={require("../../assets/images/css.png")} alt="css" height="110px" width="110px" />
-											<img
-												src={require("../../assets/images/javascript.png")}
-												alt="javascript"
-												height="100px"
-												width="90px"
-											/>
-											<img src={require("../../assets/images/python.png")} alt="python" height="130px" width="130px" />
+											<div className={styles.imageContainer}>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/html.png")}
+														alt="html"
+														height="100px"
+														width="100px"
+													/>
+													<br />
+													<span className={styles.imageText}>HTML</span>
+												</div>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/css.png")}
+														alt="css"
+														height="100px"
+														width="100px"
+													/>
+													<br />
+													<span className={styles.imageText}>CSS</span>
+												</div>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/javascript.png")}
+														alt="javascript"
+														height="100px"
+														width="90px"
+													/>
+													<br />
+													<span className={styles.skillsText}>JavaScript</span>
+												</div>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/python.png")}
+														alt="python"
+														height="100px"
+														width="100px"
+													/>
+													<br />
+													<span className={styles.imageText}>Python</span>
+												</div>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/sass.png")}
+														alt="sass"
+														height="90px"
+														width="100px"
+													/>
+													<br />
+													<span className={styles.imageText}>SASS</span>
+												</div>
+											</div>
 										</Grid>
 										<Grid alt="frameworks">
-											<h4 className={styles.skillsTitle}>Frameworks</h4>
-											<img src={require("../../assets/images/react.png")} alt="react" height="50px" width="50px" />
-											<img src={require("../../assets/images/django.png")} alt="django" height="50px" width="50px" />
-											<img src={require("../../assets/images/node.png")} alt="node" height="50px" width="50px" />
+											<h4 className={styles.skillsTitle}>Frameworks/RTE's</h4>
+											<div className={styles.imageContainer}>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/react.png")}
+														alt="react"
+														height="100px"
+														width="100px"
+													/>
+													<br />
+													<span className={styles.skillsText}>React</span>
+												</div>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/django.png")}
+														alt="django"
+														height="100px"
+														width="70px"
+													/>
+													<br />
+													<span className={styles.imageText}>Django</span>
+												</div>
+												<div className={styles.image}>
+													<img
+														src={require("../../assets/images/logos/node.png")}
+														alt="node"
+														height="100px"
+														width="100px"
+													/>
+													<br />
+													<span className={styles.skillsText}>Node.js</span>
+												</div>
+											</div>
 										</Grid>
 										<Grid alt="database/interface">
 											<h4 className={styles.skillsTitle}>Databases/Interfaces</h4>
-											<img src={require("../../assets/images/sqlite.png")} alt="sqlite" height="50px" width="50px" />
-											<img src={require("../../assets/images/mysql.png")} alt="mysql" height="60px" width="70px" />
 											<img
-												src={require("../../assets/images/firebase.png")}
+												src={require("../../assets/images/logos/sqlite.png")}
+												alt="sqlite"
+												height="100px"
+												width="100px"
+											/>
+											<img
+												src={require("../../assets/images/logos/mysql.png")}
+												alt="mysql"
+												height="130px"
+												width="160px"
+											/>
+											<img
+												src={require("../../assets/images/logos/firebase.png")}
 												alt="firebase"
-												height="50px"
-												width="50px"
-											/>
-											<img src={require("../../assets/images/mongodb.png")} alt="mongodb" height="50px" width="50px" />
-											<img src={require("../../assets/images/api.png")} alt="api" height="50px" width="50px" />
-										</Grid>
-										<Grid alt="styling">
-											<img
-												src={require("../../assets/images/materialui.png")}
-												alt="material-ui"
-												height="50px"
-												width="50px"
+												height="100px"
+												width="100px"
 											/>
 											<img
-												src={require("../../assets/images/bootstrap.png")}
-												alt="bootstrap"
-												height="50px"
-												width="60px"
+												src={require("../../assets/images/logos/mongodb.png")}
+												alt="mongodb"
+												height="85px"
+												width="85px"
 											/>
-											<img src={require("../../assets/images/sass.png")} alt="sass" height="50px" width="50px" />
+											<img src={require("../../assets/images/logos/api.png")} alt="api" height="100px" width="100px" />
 										</Grid>
 										<Grid alt="distribution">
-											<img src={require("../../assets/images/git.png")} alt="git" height="50px" width="50px" />
-											<img src={require("../../assets/images/heroku.png")} alt="heroku" height="50px" width="50px" />
+											<h4 className={styles.skillsTitle}>Distribution</h4>
+											<img src={require("../../assets/images/logos/git.png")} alt="git" height="100px" width="100px" />
+											<img
+												src={require("../../assets/images/logos/heroku.png")}
+												alt="heroku"
+												height="100px"
+												width="100px"
+											/>
+										</Grid>
+										<Grid alt="Libraries">
+											<h4 className={styles.skillsTitle}>Libraries/Other</h4>
+											<img
+												src={require("../../assets/images/logos/redux.png")}
+												alt="heroku"
+												height="100px"
+												width="100px"
+											/>
+											<img
+												src={require("../../assets/images/logos/materialui.png")}
+												alt="material-ui"
+												height="90px"
+												width="90px"
+											/>
+											<img
+												src={require("../../assets/images/logos/bootstrap.png")}
+												alt="bootstrap"
+												height="90px"
+												width="100px"
+											/>
+											<img
+												src={require("../../assets/images/logos/restapi.png")}
+												alt="restapi"
+												height="100px"
+												width="100px"
+											/>
+											<img
+												src={require("../../assets/images/logos/gunicorn.png")}
+												alt="gunicorn"
+												height="100px"
+												width="140px"
+											/>
 										</Grid>
 									</Box>
 								</div>
