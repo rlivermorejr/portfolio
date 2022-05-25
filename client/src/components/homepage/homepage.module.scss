@@ -42,4 +42,22 @@
 		align-items: center;
 		margin-top: 20px;
 	}
+	
+	.skillsTitle {
+		font-size: 28px;
+		margin-top: 25px;
+	}
+	.skillName {
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+	.skillLength {
+		color: darkblue;
+	}
+	div.imageContainer {
+		border-bottom: 2px solid black;
+	}
+	span:last-child {
+		border-bottom: none;
+	}
 }
