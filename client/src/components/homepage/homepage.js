@@ -115,6 +115,7 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+										<hr />
 										<Grid alt="frameworks">
 											<h4 className={styles.skillsTitle}>Frameworks/RTE's</h4>
 											<div className={styles.imageContainer}>
@@ -156,6 +157,7 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+										<hr />
 										<Grid alt="database/interface">
 											<h4 className={styles.skillsTitle}>Databases/Interfaces</h4>
 											<div className={styles.imageContainer}>
@@ -209,6 +211,7 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+										<hr />
 										<Grid alt="distribution">
 											<h4 className={styles.skillsTitle}>Distribution/Version Control</h4>
 											<div className={styles.imageContainer}>
@@ -238,6 +241,7 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+										<hr />
 										<Grid alt="Libraries">
 											<h4 className={styles.skillsTitle}>Libraries/Other</h4>
 											<div className={styles.imageContainer}>

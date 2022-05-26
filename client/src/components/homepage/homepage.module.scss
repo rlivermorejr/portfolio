@@ -54,10 +54,8 @@
 	.skillLength {
 		color: darkblue;
 	}
-	div.imageContainer {
-		border-bottom: 2px solid black;
-	}
-	span:last-child {
-		border-bottom: none;
-	}
+	hr {
+	border: 2px solid black;
+	color: black;
+		}
 }
