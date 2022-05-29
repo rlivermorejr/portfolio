@@ -10,7 +10,7 @@ import BigRoll from "./components/BigRoll";
 export default function DiceRoller() {
 	return (
 		<div className={styles.dice}>
-			<div className={styles.homeHeader}>
+			<div>
 				<AnimatedTypingComponent title={`Welcome to Dice Roller!`} />
 			</div>
 			<SingleRoll />

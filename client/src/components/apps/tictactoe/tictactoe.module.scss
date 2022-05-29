@@ -1,12 +1,7 @@
 .tictactoe {
   @font-face {
       font-family: 'Press Start 2p';
-      src: url(C:\Users\Russ\AppData\Local\Microsoft\Windows\Fonts\PressStart2P-Regular.ttf);
-    }
-  div.homeHeader {
-      background-color: #f1f1f1;
-      padding: 20px;
-      text-align: center;
+      src: url("../../../assets/fonts/PressStart2P-Regular.ttf");
     }
   .container {
     margin-top: 20px;

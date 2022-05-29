@@ -8,7 +8,7 @@ const TicTacToe = () => {
 	return (
 		<>
 			<div className={styles.tictactoe}>
-				<div className={styles.homeHeader}>
+				<div>
 					<AnimatedTypingComponent title={`Welcome to TicTacToe!`} />
 				</div>
 				<Board />

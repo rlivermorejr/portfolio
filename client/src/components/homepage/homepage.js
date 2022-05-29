@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 	columns: {
 		padding: theme.spacing(2),
 		textAlign: "center",
-		color: theme.palette.text.secondary,
 		width: "100%",
 	},
 }));
@@ -26,10 +25,23 @@ const useStyles = makeStyles((theme) => ({
 // This will be the landing page for our application.
 export default function HomePage() {
 	const classes = useStyles();
+	const [offsetY, setOffsetY] = useState(0);
+
+	const handleScroll = () => {
+		setOffsetY(window.pageYOffset);
+	};
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	return (
 		<div className={styles.homepage}>
-			<div className={styles.homeHeader}>
+			<div>
 				<AnimatedTypingComponent title={"Hello I'm Russell Livermore"} title2={"Welcome to my portfolio"} />
 			</div>
 			<div className={classes.root}>

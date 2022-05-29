@@ -28,7 +28,7 @@ export default function Navbar() {
 		<>
 			<div className={styles.navbar}>
 				<CNavbar expand="lg" colorScheme="light" className="bg-light">
-					<CContainer fluid>
+					<CContainer fluid id={styles.navbar_main}>
 						<CNavbarBrand href="/">Home</CNavbarBrand>
 						<CNavbarToggler
 							aria-label="Toggle navigation"
@@ -36,7 +36,7 @@ export default function Navbar() {
 							onClick={() => setVisible(!visible)}
 						/>
 						<CCollapse className="navbar-collapse" visible={visible}>
-							<CNavbarNav>
+							<CNavbarNav id={styles.nav_links}>
 								<CNavItem>
 									<CNavLink href="/resume">Resume</CNavLink>
 								</CNavItem>

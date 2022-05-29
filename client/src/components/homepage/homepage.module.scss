@@ -1,11 +1,7 @@
 .homepage {
-	div.homeHeader {
-		background-color: #f1f1f1;
-		padding: 20px;
-		text-align: center;
-	}
 	.skillsHeader {
-		font-weight: bolder;
+		font-family: 'Bungee Shade';
+		color: black;
 	}
 	.root {
 		border: 2px inset grey;
@@ -46,6 +42,8 @@
 	.skillsTitle {
 		font-size: 28px;
 		margin-top: 25px;
+		font-family: 'Marcellus SC';
+		color: black;
 	}
 	.skillName {
 		font-weight: bold;
