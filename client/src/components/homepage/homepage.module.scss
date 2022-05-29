@@ -1,10 +1,13 @@
 .homepage {
+	body {
+	background-image: url("../../assets/images/background.jpg");
+	background-size: contain;
+	}
 	.skillsHeader {
 		font-family: 'Bungee Shade';
-		color: black;
+		color: white;
 	}
 	.root {
-		border: 2px inset grey;
 		width: 150px;
 		margin: auto;
 		text-align: center;
@@ -23,6 +26,7 @@
 		margin-top: 10px;
 		height: 100%;
 		width: 100%;
+		color: white;
 	}
 	img {
 		margin-right: 5px;
@@ -43,17 +47,17 @@
 		font-size: 28px;
 		margin-top: 25px;
 		font-family: 'Marcellus SC';
-		color: black;
+		color: white;
 	}
 	.skillName {
 		font-weight: bold;
 		font-variant: small-caps;
 	}
 	.skillLength {
-		color: darkblue;
+		color: white;
 	}
 	hr {
-	border: 2px solid black;
-	color: black;
+		border: 2px solid white;
+		color: white;
 		}
 }

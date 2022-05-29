@@ -27,7 +27,7 @@ export default function Navbar() {
 	return (
 		<>
 			<div className={styles.navbar}>
-				<CNavbar expand="lg" colorScheme="light" className="bg-light">
+				<CNavbar expand="lg" colorScheme="dark" className="bg-dark fixed-top m-2">
 					<CContainer fluid id={styles.navbar_main}>
 						<CNavbarBrand href="/">Home</CNavbarBrand>
 						<CNavbarToggler

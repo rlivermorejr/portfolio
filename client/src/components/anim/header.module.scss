@@ -1,9 +1,25 @@
 .header {
   div.typing {
-    background-color: #f1f1f1;
+    background-color: transparent;
     padding: 20px;
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
     font-family: "VT323";
+    color: #fff;
+    margin-top: 5%;
+  }
+  .line1 {
+    margin-top: 5%;
+    color: white;
+    font-family: "VT323";
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+  }
+  .line2 {
+    color: white;
+    font-family: "VT323";
+    text-align: center;
+    font-size: 32px;
   }
 }

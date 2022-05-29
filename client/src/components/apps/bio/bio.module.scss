@@ -7,6 +7,9 @@
 	.container {
 		display: flex;
 		flex-direction:	row;
+		color: white;
+		border-radius: 10px;
+		padding: 15px;
 	}
 	.imageContainer {
 		display: flex;
@@ -14,13 +17,13 @@
 		justify-content: center;
 		align-items: flex-start;
 		margin-left: 50px;
-		margin-top: 20px;
+		margin-top: 15px;
 	}
 	.bioText {
-		margin-top: 45px;
+		margin-top: 15px;
 		margin-left: 150px;
 		text-align: center;
-		color: black;
-		font-family: "Caveat";
+		font-family: "Mina";
+		font-size: 18px;
 	}
 }

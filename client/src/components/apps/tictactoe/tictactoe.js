@@ -4,12 +4,14 @@ import AnimatedTypingComponent from "../../anim/headerType";
 
 import styles from "./tictactoe.module.scss";
 
+const MemoAnimatedTypingComponent = React.memo(({ ...props }) => <AnimatedTypingComponent {...props} />);
+
 const TicTacToe = () => {
 	return (
 		<>
 			<div className={styles.tictactoe}>
 				<div>
-					<AnimatedTypingComponent title={`Welcome to TicTacToe!`} />
+					<MemoAnimatedTypingComponent title={`Welcome to TicTacToe!`} />
 				</div>
 				<Board />
 			</div>

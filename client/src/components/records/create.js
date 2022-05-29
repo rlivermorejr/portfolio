@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -25,7 +26,7 @@ export default function Create() {
 		// When a post request is sent to the create url, we'll add a new record to the database.
 		const newPerson = { ...form };
 
-		await fetch("http://localhost:5000/record/add", {
+		await fetch("http://localhost:8000/record/add", {
 			// Defines the request as a post request.
 			method: "POST",
 			// Sets the header to be JSON.
@@ -47,15 +48,15 @@ export default function Create() {
 
 	// This following section will display the form that takes the input from the user.
 	return (
-		<div>
+		<div className="m-2">
 			<img
 				id="mongoLogo"
 				src="https://d3cy9zhslanhfa.cloudfront.net/media/3800C044-6298-4575-A05D5C6B7623EE37/4B45D0EC-3482-4759-82DA37D8EA07D229/webimage-8A27671A-8A53-45DC-89D7BF8537F15A0D.png"
 				alt="mongodb logo"
 			></img>
-			<h3>Create New Record</h3>
-			<form onSubmit={onSubmit}>
-				<div className="form-group">
+			<h3 className="text-center">Create New Record</h3>
+			<form onSubmit={onSubmit} className="d-flex flex-column align-items-center">
+				<div className="form-group m-3 w-25 text-center">
 					<label htmlFor="name">Name</label>
 					<input
 						type="text"
@@ -65,7 +66,7 @@ export default function Create() {
 						onChange={(e) => updateForm({ name: e.target.value })}
 					/>
 				</div>
-				<div className="form-group">
+				<div className="form-group m-3 w-25 text-center">
 					<label htmlFor="position">Position</label>
 					<input
 						type="text"
@@ -75,7 +76,7 @@ export default function Create() {
 						onChange={(e) => updateForm({ position: e.target.value })}
 					/>
 				</div>
-				<div className="form-group">
+				<div className="form-group m-3 text-center">
 					<div className="form-check form-check-inline">
 						<input
 							className="form-check-input"
@@ -119,10 +120,15 @@ export default function Create() {
 						</label>
 					</div>
 				</div>
-				<div className="form-group">
-					<input type="submit" value="Create person" className="btn btn-primary" />
+				<div className="form-group text-center">
+					<input type="submit" value="Save Record" className="btn btn-primary" />
 				</div>
 			</form>
+			<div className="text-center mt-2">
+				<Link className="btn btn-secondary" to="/records">
+					Back
+				</Link>
+			</div>
 		</div>
 	);
 }

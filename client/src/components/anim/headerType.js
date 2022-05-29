@@ -8,12 +8,16 @@ export default function AnimatedTypingComponent(props) {
 
 	return (
 		<div className={styles.header}>
-			<Typing className={styles.typing}>
-				<div id={styles.header}>{title}</div>
+			{/* <Typing className={styles.typing}> */}
+			<div className={styles.line1} id={styles.header}>
+				{title}
+			</div>
 
-				<Typing.Delay ms={1000} />
-				<div id={styles.wel}>{title2}</div>
-			</Typing>
+			{/* <Typing /> */}
+			<div className={styles.line2} id={styles.wel}>
+				{title2}
+			</div>
+			{/* </Typing> */}
 		</div>
 	);
 }

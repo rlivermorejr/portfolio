@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -17,7 +18,7 @@ export default function Edit() {
 		async function fetchData() {
 			// This gets the record id and sends it to the backend in the url.
 			const id = params.id.toString();
-			const response = await fetch(`http://localhost:5000/record/${params.id.toString()}`);
+			const response = await fetch(`http://localhost:8000/record/${params.id.toString()}`);
 
 			if (!response.ok) {
 				// If there is an error with the response, we'll display it.
@@ -59,7 +60,7 @@ export default function Edit() {
 		};
 
 		// This will send a post request to update the data in the database.
-		await fetch(`http://localhost:5000/update/${params.id}`, {
+		await fetch(`http://localhost:8000/update/${params.id}`, {
 			method: "POST",
 			body: JSON.stringify(editedPerson),
 			headers: {
@@ -72,16 +73,16 @@ export default function Edit() {
 
 	// This following section will display the form that takes input from the user to update the data.
 	return (
-		<div>
+		<div className="m-2">
 			<img
 				id="mongoLogo"
 				src="https://d3cy9zhslanhfa.cloudfront.net/media/3800C044-6298-4575-A05D5C6B7623EE37/4B45D0EC-3482-4759-82DA37D8EA07D229/webimage-8A27671A-8A53-45DC-89D7BF8537F15A0D.png"
 				alt="mongodb logo"
 			></img>
-			<h3>Update Record</h3>
+			<h3 className="text-center">Update Record</h3>
 			{/* Executes onSubmit when submit button is clicked */}
-			<form onSubmit={onSubmit}>
-				<div className="form-group">
+			<form onSubmit={onSubmit} className="d-flex flex-column align-items-center">
+				<div className="form-group m-3 w-25 text-center">
 					<label htmlFor="name">Name: </label>
 					<input
 						type="text"
@@ -92,7 +93,7 @@ export default function Edit() {
 						onChange={(e) => updateForm({ name: e.target.value })}
 					/>
 				</div>
-				<div className="form-group">
+				<div className="form-group m-3 w-25 text-center">
 					<label htmlFor="position">Position: </label>
 					<input
 						type="text"
@@ -103,7 +104,7 @@ export default function Edit() {
 						onChange={(e) => updateForm({ position: e.target.value })}
 					/>
 				</div>
-				<div className="form-group">
+				<div className="form-group m-3 text-center">
 					<div className="form-check form-check-inline">
 						<input
 							className="form-check-input"
@@ -153,10 +154,15 @@ export default function Edit() {
 				<br />
 
 				{/* This is the button that will submit the form. */}
-				<div className="form-group">
-					<input type="submit" value="Update Record" className="btn btn-primary" />
+				<div className="form-group text-center">
+					<input type="submit" value="Save Record" className="btn btn-primary" />
 				</div>
 			</form>
+			<div className="text-center mt-2">
+				<Link className="btn btn-secondary" to="/records">
+					Cancel
+				</Link>
+			</div>
 		</div>
 	);
 }
