@@ -5,7 +5,9 @@ import styles from "./basketball.module.scss";
 export default function Basketball() {
 	return (
 		<div className={styles.gameIndex}>
-			<Game />
+			<div className={styles.gameContainer}>
+				<Game />
+			</div>
 		</div>
 	);
 }

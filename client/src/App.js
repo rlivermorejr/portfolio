@@ -14,15 +14,23 @@ import Basketball from "./components/apps/basketball/basketball";
 import TicTacToe from "./components/apps/tictactoe/tictactoe";
 import Resume from "./components/resume/resume";
 
+import styles from "./App.module.scss";
+
 export default function App() {
 	return (
-		<div>
+		<div className={styles.main}>
 			<AnimatePresence exitBeforeEnter>
 				<motion.div exit={{ opacity: 0 }}>
 					<Navbar />
-
 					<Routes>
-						<Route path="/" element={<HomePage />} />
+						<Route
+							path="/"
+							element={
+								<div className={styles.home}>
+									<HomePage className={styles.home} />
+								</div>
+							}
+						/>
 						<Route path="/resume" element={<Resume />} />
 						<Route path="/react/diceroller" element={<DiceRoller />} />
 						<Route path="/react/basketball" element={<Basketball />} />
