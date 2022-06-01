@@ -43,11 +43,24 @@ export default class GitHubCard extends React.Component {
 						</Button>
 					</AccordionSummary>
 					<Card className="card__github">
-						<CardMedia style={{ height: 200, width: 200 }} image={this.state.user.avatar_url} title="Github Avatar" />
+						<CardMedia
+							style={{ height: 200, width: 200, borderRadius: 100 }}
+							image={this.state.user.avatar_url}
+							title="Github Avatar"
+						/>
 						<CardContent>
 							<Typography variant="body2" color="textSecondary" component="p">
 								User: {this.state.user.login}
 							</Typography>
+							<Typography variant="body2" color="textSecondary" component="p">
+								Bio: {this.state.user.bio}
+							</Typography>
+							<Typography variant="body2" color="textSecondary" component="p">
+								<a href={this.state.user.html_url} target="_blank" rel="noopener noreferrer">
+									Link to Github
+								</a>
+							</Typography>
+							<br />
 							<Typography variant="body2" color="textSecondary" component="p">
 								Public Repos: {this.state.user.public_repos}
 								{console.log(this.state.user)}

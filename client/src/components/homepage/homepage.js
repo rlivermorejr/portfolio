@@ -127,6 +127,7 @@ export default function HomePage() {
 								transform: `translateY(${offsetY * 0.1}px) translateX(${offsetY * 0.1}px)`,
 							}}
 						/>
+
 						<Image
 							src={require("../../assets/images/galaxy2.png")}
 							alt="galaxy2"
@@ -135,6 +136,7 @@ export default function HomePage() {
 								transform: `translateY(${offsetY * 0.07}px)`,
 							}}
 						/>
+
 						<Grid item xs={9}>
 							<Paper className={classes.columns}>
 								<h2 className={styles.skillsHeader}>Skills</h2>
@@ -429,6 +431,14 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+										<Image
+											src={require("../../assets/images/deathstar.png")}
+											alt="deathstar"
+											className={styles.deathstar}
+											style={{
+												transform: `translateY(${offsetY * 0.2}px)`,
+											}}
+										/>
 									</Box>
 								</div>
 							</Paper>

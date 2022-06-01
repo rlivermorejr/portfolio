@@ -1,6 +1,11 @@
+.main {
+	margin-top: 5rem;
+}
+
 #mongoLogo {
 	height: 25%;
 	width: 15%;
+	margin-left: 2rem;
 }
 
 #mongoList {

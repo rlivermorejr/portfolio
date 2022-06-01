@@ -4,6 +4,55 @@
 	background-image: url("./assets/images/backgrounds/space.jpg");
 	background-size: contain;
 	width: 100vw;
-	height: 370vh;
+	height: 400vh;
+	
 }
+	@media screen and (max-width: 1500px) {
+		.home {
+			background-image: url("./assets/images/backgrounds/space.jpg");
+			background-size: contain;
+			width: 100vw;
+			height: 350vh;
+		}
+	}
+	@media screen and (max-width: 1240px) {
+		.home {
+				background-image: url("./assets/images/backgrounds/space.jpg");
+				background-size: contain;
+				width: 100vw;
+				height: 480vh;
+			}
+	}
+	@media screen and (max-width: 970px) {
+		.home {
+			background-image: url("./assets/images/backgrounds/space.jpg");
+			background-size: contain;
+			width: 100vw;
+			height: 420vh;
+		}
+	}
+	@media screen and (max-width: 890px) {
+		.home {
+			background-image: url("./assets/images/backgrounds/space.jpg");
+			background-size: contain;
+			width: 100vw;
+			height: 600vh;
+		}
+	}
+		@media screen and (max-width: 780px) {
+			.home {
+				background-image: url("./assets/images/backgrounds/space.jpg");
+				background-size: contain;
+				width: 100vw;
+				height: 600vh;
+			}
+		}
+		@media screen and (max-width: 635px) {
+			.home {
+				background-image: url("./assets/images/backgrounds/space.jpg");
+				background-size: contain;
+				width: 100vw;
+				height: 1000vh;
+			}
+		}
 }

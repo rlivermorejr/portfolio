@@ -1,6 +1,10 @@
 .dice {
+	background: rgb(0, 41, 250);
+	background: radial-gradient(circle, rgba(0, 41, 250, 1) 0%, rgba(0, 254, 247, 1) 75%);
+	height: 120vh;
 	.game_container {
 		background-color: floralwhite;
+		height:100vh;
 	}
 	#outerDiv {
 		text-align: center;

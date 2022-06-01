@@ -1,10 +1,13 @@
 .tictactoe {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 69%);
+  height: 100vh;
   @font-face {
       font-family: 'Press Start 2p';
       src: url("../../../assets/fonts/PressStart2P-Regular.ttf");
     }
   .container {
-    margin-top: 20px;
+    margin-top: 5%;
   }
   .inner {
     margin-left: 35%;

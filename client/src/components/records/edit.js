@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 
-import "./style.css";
+import "./mongoStyles.css";
 
 export default function Edit() {
 	const [form, setForm] = useState({
@@ -73,7 +73,7 @@ export default function Edit() {
 
 	// This following section will display the form that takes input from the user to update the data.
 	return (
-		<div className="m-2">
+		<div className="main">
 			<img
 				id="mongoLogo"
 				src="https://d3cy9zhslanhfa.cloudfront.net/media/3800C044-6298-4575-A05D5C6B7623EE37/4B45D0EC-3482-4759-82DA37D8EA07D229/webimage-8A27671A-8A53-45DC-89D7BF8537F15A0D.png"
