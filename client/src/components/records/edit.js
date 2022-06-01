@@ -18,7 +18,7 @@ export default function Edit() {
 		async function fetchData() {
 			// This gets the record id and sends it to the backend in the url.
 			const id = params.id.toString();
-			const response = await fetch(`http://localhost:8000/record/${params.id.toString()}`);
+			const response = await fetch(`/record/${params.id.toString()}`);
 
 			if (!response.ok) {
 				// If there is an error with the response, we'll display it.
@@ -60,7 +60,7 @@ export default function Edit() {
 		};
 
 		// This will send a post request to update the data in the database.
-		await fetch(`http://localhost:8000/update/${params.id}`, {
+		await fetch(`/update/${params.id}`, {
 			method: "POST",
 			body: JSON.stringify(editedPerson),
 			headers: {
