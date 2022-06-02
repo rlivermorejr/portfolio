@@ -12,13 +12,13 @@ export default function Bio() {
 				</div>
 				<div className={styles.bioText}>
 					I am actively looking for a career, not a job. I have worked in sales and customer service for a long time,
-					but I always knew I wanted to be a developer ever since High School when I was able to take Website
-					Development and Computer Programming courses, which made me fall in love with coding. After I graduated
-					though, I was not able to persue this passion due to losing my father in an accident. I had to put all of my
-					personal aspirations to the side and take care of my two sisters, but the pandemic was sort of a blessing in
-					disguise for me because it provided an opportunity to go back to school for Software Development. I was able
-					to further my education and gain a Front-End and Full-Stack Web Development Certificate through Kenzie Academy
-					partnered with Southern New Hampshire University.
+					but I always knew I wanted to be a developer ever since High School. I had the opportunity to take Website
+					Development and Computer Programming courses, which made me fall in love with coding. Unfortunately, After I
+					graduated though, I was not able to pursue this passion due to losing my father in an accident. Subsequently,
+					I had to put all of my personal aspirations to the side and take care of my two sisters. However, the pandemic
+					turned out to be a blessing in disguise because it provided an opportunity to go back to school for Software
+					Development. I was able to further my education and gain a Front-End and Full-Stack Web Development
+					Certificate through Kenzie Academy partnered with Southern New Hampshire University.
 					<br />
 					<br />
 					Kenzie Academy is a great place to learn and grow as a developer and I am excited to see what I can do in this
