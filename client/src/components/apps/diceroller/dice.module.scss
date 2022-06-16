@@ -1,69 +1,94 @@
 .dice {
-	background: rgb(0, 41, 250);
-	background: radial-gradient(circle, rgba(0, 41, 250, 1) 0%, rgba(0, 254, 247, 1) 75%);
-	height: 120vh;
-	.game_container {
-		background-color: floralwhite;
-		height:100vh;
-	}
-	#outerDiv {
-		text-align: center;
-		padding-top: 10px;
-	}
-	#outerDiv2 {
-		text-align: center;
-		padding-top: 10px;
-	}
-	.firstRoll {
-		padding: 5px;
-		display: inline-block;
-	}
-	.secondRoll {
-		padding: 5px;
-		display: inline-block;
-	}
-	#freq {
-		padding-top: 10px;
-		font-size: 34px;
-		text-align: center;
-	}
-	.thirdRoll {
-		padding: 5px;
-		display: inline-block;
-	}
+  background: rgb(0, 41, 250);
+  background: radial-gradient(circle, rgba(0, 41, 250, 1) 0%, rgba(0, 254, 247, 1) 75%);
+  height: 120vh;
 
-	#chart {
-		background-color: white;
-		border: 2px outset grey;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		padding: 5px;
-		width: 40%;
-		font-size: 30px;
-	}
-	#chart:empty{
-		display:none;
-	}
-	#chart2 {
-		background-color: white;
-		border: 2px outset grey;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		padding: 5px;
-		width: 40%;
-		font-size: 30px;
-		margin-left: 10px;
-	}
-	#chart2:empty {
-		display: none;
-	}
-	#results {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-	}
-	.roll1,
-	.roll2 {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
+  .game_container {
+    background-color: floralwhite;
+    height: 100vh;
+  }
+
+  .header {
+    color: black !important;
+  }
+
+  #outerDiv {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  #outerDiv2 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .firstRoll {
+    padding: 5px;
+    display: inline-block;
+  }
+
+  .secondRoll {
+    padding: 5px;
+    display: inline-block;
+  }
+
+  #freq {
+    padding-top: 10px;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .thirdRoll {
+    padding: 5px;
+    display: inline-block;
+  }
+
+  #chart {
+    background-color: white;
+    border: 2px outset grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    width: 40%;
+    font-size: 30px;
+  }
+
+  #chart:empty {
+    display: none;
+  }
+
+  #chart2 {
+    background-color: white;
+    border: 2px outset grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    width: 40%;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  #chart2:empty {
+    display: none;
+  }
+
+  #results {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .roll1,
+  .roll2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 845px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    margin-top: 18%;
+  }
+
+  @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+
+    margin-top: 18%;
+  }
 }

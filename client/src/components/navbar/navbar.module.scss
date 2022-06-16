@@ -1,11 +1,38 @@
 .navbar {
-	#navbar_main {
-		font-weight: bold;
-		font-size: 22px;
-		font-family: "Rubik Wet Paint";
-		position: sticky;
-	}
-	#nav_links {
-		margin-top: 2px;
-	}
+  width: 100%;
+
+  #navbar_main {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Rubik Wet Paint";
+    position: sticky;
+  }
+
+  #nav_links {
+    margin-top: 2px;
+  }
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 845px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    #navbar_main {
+      font-weight: bold;
+      font-size: 22px;
+      font-family: "Rubik Wet Paint";
+      position: sticky;
+      overflow-x: hidden;
+
+    }
+  }
+
+  @media screen and (max-width: 1370px) {
+    max-width: 100%;
+    overflow-x: hidden;
+
+    #navbar_main {
+      font-weight: bold;
+      font-size: 22px;
+      font-family: "Rubik Wet Paint";
+      position: sticky;
+    }
+  }
+
 }

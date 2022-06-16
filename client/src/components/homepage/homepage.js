@@ -49,16 +49,20 @@ export default function HomePage() {
 	}, []);
 
 	return (
+		// This div sets the offset for parralax effect.
 		<div
 			className={styles.homepage}
 			style={{
 				transform: `translateY(${offsetY * 0.3}px)`,
 			}}
 		>
+			{/* Header */}
 			<div>
 				<MemoAnimatedTypingComponent title={"Hello I'm Russell Livermore"} title2={"Welcome to my portfolio"} />
 			</div>
 			<div className={classes.root} id={styles.root}>
+				{/* Background images */}
+
 				<Image
 					src={require("../../assets/images/sun.png")}
 					alt="sun"
@@ -99,18 +103,41 @@ export default function HomePage() {
 						transform: `translateY(${offsetY * 0.2}px)`,
 					}}
 				/>
+
+				{/* End of background images */}
+				{/* Start of page content */}
+
 				<Box>
-					<Grid container spacing={2}>
-						<Grid item xs={12}>
-							<Paper className={classes.columns}>
+					<Grid
+						container
+						spacing={0}
+						direction="column"
+						alignItems="center"
+						justifyContent="center"
+						// style={{ minHeight: "100vh" }}
+					>
+						<Grid item xs={11}>
+							<Paper id={styles.bio} className={classes.columns}>
 								<Bio />
 							</Paper>
 						</Grid>
+					</Grid>
+					<Grid
+						container
+						spacing={0}
+						direction="row"
+						alignItems="flex-start"
+						justifyContent="center"
+						// style={{ minHeight: "100vh" }}
+					>
 						<Grid item xs={3}>
 							<Paper className={classes.columns}>
 								<GitHubCard />
 							</Paper>
 						</Grid>
+
+						{/* More background images */}
+
 						<Image
 							src={require("../../assets/images/planet2.png")}
 							alt="planet2"
@@ -127,7 +154,6 @@ export default function HomePage() {
 								transform: `translateY(${offsetY * 0.1}px) translateX(${offsetY * 0.1}px)`,
 							}}
 						/>
-
 						<Image
 							src={require("../../assets/images/galaxy2.png")}
 							alt="galaxy2"
@@ -137,7 +163,10 @@ export default function HomePage() {
 							}}
 						/>
 
-						<Grid item xs={9}>
+						{/* End of images */}
+						{/* Start of skills container/items */}
+
+						<Grid item xs={8}>
 							<Paper className={classes.columns}>
 								<h2 className={styles.skillsHeader}>Skills</h2>
 								<div className={styles.skillsList}>
@@ -207,12 +236,15 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+
+										{/* More background images */}
+
 										<Image
 											src={require("../../assets/images/comet.png")}
 											alt="comet"
 											className={styles.comet}
 											style={{
-												transform: `rotate(-45deg) translateX(${offsetY * 0.7}px)`,
+												transform: `rotate(-65deg) translateX(${offsetY * 0.6}px)`,
 											}}
 										/>
 										<Image
@@ -223,6 +255,10 @@ export default function HomePage() {
 												transform: `translateY(${offsetY * 0.2}px)`,
 											}}
 										/>
+
+										{/* End of background images */}
+										{/* Continued skills items */}
+
 										<hr />
 										<Grid alt="frameworks">
 											<h4 className={styles.skillsTitle}>Frameworks/RTE's</h4>
@@ -291,7 +327,7 @@ export default function HomePage() {
 													<br />
 													<span className={styles.skillName}>MySQL</span>
 													<br />
-													<span className={styles.skillLength}>1 Year</span>
+													<span className={styles.skillLength}>0.5 Years</span>
 												</div>
 												<div className={styles.image}>
 													<img
@@ -349,6 +385,7 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+										{/* More background images */}
 										<Image
 											src={require("../../assets/images/nebula.png")}
 											alt="nebula"
@@ -365,6 +402,10 @@ export default function HomePage() {
 												transform: `translateY(${offsetY * 0.1}px)`,
 											}}
 										/>
+
+										{/* End of background images */}
+										{/* Continued skills items */}
+
 										<hr />
 										<Grid alt="Libraries">
 											<h4 className={styles.skillsTitle}>Libraries/Other</h4>
@@ -431,6 +472,8 @@ export default function HomePage() {
 												</div>
 											</div>
 										</Grid>
+
+										{/* Last background image */}
 										<Image
 											src={require("../../assets/images/deathstar.png")}
 											alt="deathstar"

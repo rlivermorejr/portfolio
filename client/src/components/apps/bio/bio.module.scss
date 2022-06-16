@@ -1,112 +1,101 @@
 .bio {
-	#profilePic {
-		height: 360px;
-		width: 230px;
-		border-radius: 130px;
-	}
-	.container {
-		display: flex;
-		flex-direction:	row;
-		color: rgb(255, 255, 255);
-		text-shadow: 2px 2px rgb(0, 0, 0);
-		border-radius: 10px;
-		padding: 15px;
-	}
-	.imageContainer {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-	.bioText {
-		margin-top: 15px;
-		margin-left: 50px;
-		text-align: center;
-		font-family: "Mina";
-		font-size: 18px;
-	}
-		@media screen and (max-width: 1500px) {
-		.imageContainer {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-			}
-		
-			.bioText {
-				margin-top: 15px;
-				margin-left: 50px;
-				text-align: center;
-				font-family: "Mina";
-				font-size: 18px;
-			}
-		}
-	
-		@media screen and (max-width: 1240px) {
-		.imageContainer {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-			}
-		
-			.bioText {
-				margin-top: 15px;
-				margin-left: 50px;
-				text-align: center;
-				font-family: "Mina";
-				font-size: 18px;
-			}
-		}
-	
-		@media screen and (max-width: 970px) {
-		.imageContainer {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-			}
-		
-			.bioText {
-				margin-top: 15px;
-				margin-left: 50px;
-				text-align: center;
-				font-family: "Mina";
-				font-size: 18px;
-			}
-		}
-	
-		@media screen and (max-width: 890px) {
-		.imageContainer {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-			}
-		
-			.bioText {
-				margin-top: 15px;
-				margin-left: 50px;
-				text-align: center;
-				font-family: "Mina";
-				font-size: 18px;
-			}
-		}
-	
-		@media screen and (max-width: 780px) {
-		.imageContainer {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-			}
-		
-			.bioText {
-				margin-top: 15px;
-				margin-left: 50px;
-				text-align: center;
-				font-family: "Mina";
-				font-size: 18px;
-			}
-		}
+
+  #profilePic {
+    height: 360px;
+    width: 230px;
+    border-radius: 130px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .bioText {
+    margin-top: 15px;
+    margin-left: 15%;
+    text-align: center;
+    font-family: "Mina";
+    font-size: 18px;
+    width: 50%;
+  }
+
+  /* Portrait and Landscape */
+  @media only screen and (min-device-width: 375px) and (max-device-width: 845px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .imageContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #profilePic {
+      height: 180px;
+      width: 120px;
+      border-radius: 130px;
+    }
+
+    .bioText {
+      margin-top: 15px;
+      margin-left: 50px;
+      text-align: center;
+      font-family: "Mina";
+      font-size: 14px;
+      margin-left: -1px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px rgb(0, 0, 0);
+      border-radius: 10px;
+      padding: 15px;
+    }
+  }
+
+  /* Landscape */
+  @media only screen and (min-device-width: 375px) and (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .imageContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #profilePic {
+      height: 180px;
+      width: 130px;
+      border-radius: 130px;
+    }
+
+    .bioText {
+      margin-top: 15px;
+      margin-left: 50px;
+      text-align: center;
+      font-family: "Mina";
+      font-size: 18px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px rgb(0, 0, 0);
+      border-radius: 10px;
+      padding: 15px;
+    }
+  }
 }

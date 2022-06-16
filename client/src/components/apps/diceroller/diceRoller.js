@@ -12,7 +12,7 @@ const MemoAnimatedTypingComponent = React.memo(({ ...props }) => <AnimatedTyping
 export default function DiceRoller() {
 	return (
 		<div className={styles.dice}>
-			<div>
+			<div className={styles.header}>
 				<MemoAnimatedTypingComponent title={`Welcome to Dice Roller!`} />
 			</div>
 			<SingleRoll />
