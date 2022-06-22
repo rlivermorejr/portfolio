@@ -12,7 +12,7 @@
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px rgb(0, 0, 0);
     border-radius: 10px;
-    padding: 15px;
+    // padding: 15px;
   }
 
   .imageContainer {
@@ -32,8 +32,8 @@
     width: 50%;
   }
 
-  /* Portrait and Landscape */
-  @media only screen and (min-device-width: 375px) and (max-device-width: 845px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  /* For 1024 Resolution */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .imageContainer {
       display: flex;
       flex-direction: row;
@@ -67,26 +67,28 @@
   }
 
   /* Landscape */
-  @media only screen and (min-device-width: 375px) and (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  @media only screen and (min-device-width : 360px) and (max-device-width : 844px) {
     .imageContainer {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      // margin-left: -5%;
     }
 
     #profilePic {
       height: 180px;
-      width: 130px;
+      width: 110px;
       border-radius: 130px;
     }
 
     .bioText {
       margin-top: 15px;
-      margin-left: 50px;
-      text-align: center;
+      margin-left: 70px;
+      // text-align: center;
       font-family: "Mina";
-      font-size: 18px;
+      font-size: 12px;
+
     }
 
     .container {
@@ -95,7 +97,7 @@
       color: rgb(255, 255, 255);
       text-shadow: 2px 2px rgb(0, 0, 0);
       border-radius: 10px;
-      padding: 15px;
+      // padding: 15px;
     }
   }
 }

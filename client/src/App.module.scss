@@ -7,60 +7,23 @@
 
   }
 
-  @media screen and (max-width: 1500px) {
+  /* For 1024 Resolution */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .home {
       background-image: url("./assets/images/backgrounds/space.jpg");
       background-size: contain;
-      height: 550vh;
+      width: 100vw;
+      height: 450vh;
     }
   }
 
-  @media screen and (max-width: 1370px) {
+  @media only screen and (min-device-width : 360px) and (max-device-width : 844px) {
     .home {
-      background-image: url("./assets/images/backgrounds/space.jpg");
-      background-size: contain;
-      height: 600vh;
-    }
-  }
-
-  @media screen and (max-width: 970px) {
-    .home {
-      background-image: url("./assets/images/backgrounds/space.jpg");
-      background-size: contain;
-      height: 420vh;
-    }
-  }
-
-  @media screen and (max-width: 890px) {
-    .home {
-      background-image: url("./assets/images/backgrounds/space.jpg");
-      background-size: contain;
-      height: 600vh;
-    }
-  }
-
-  @media screen and (max-width: 780px) {
-    .home {
-      background-image: url("./assets/images/backgrounds/space.jpg");
-      background-size: contain;
-      height: 600vh;
-    }
-  }
-
-  @media screen and (max-width: 635px) {
-    .home {
-      background-image: url("./assets/images/backgrounds/space.jpg");
-      background-size: contain;
-      height: 1000vh;
-    }
-  }
-
-  @media only screen and (min-device-width: 375px) and (max-device-width: 845px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    .home {
-      background-image: url("./assets/images/backgrounds/space.jpg");
-      background-size: contain;
-      height: 400vh;
       margin-top: 15%;
+      background-image: url("./assets/images/backgrounds/space.jpg");
+      background-size: contain;
+      width: 100vw;
+      height: 1000vh;
     }
   }
 }

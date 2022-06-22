@@ -8,6 +8,7 @@
     color: #fff;
     margin-top: 5%;
   }
+
   .line1 {
     margin-top: 5%;
     color: white;
@@ -16,10 +17,29 @@
     font-size: 32px;
     padding: 20px;
   }
+
   .line2 {
     color: white;
     font-family: "VT323";
     text-align: center;
     font-size: 32px;
+  }
+
+  @media only screen and (min-device-width : 360px) and (max-device-width : 844px) {
+    .line1 {
+      margin-top: 5%;
+      color: white;
+      font-family: "VT323";
+      text-align: center;
+      font-size: 18px;
+      padding: 20px;
+    }
+
+    .line2 {
+      color: white;
+      font-family: "VT323";
+      text-align: center;
+      font-size: 18px;
+    }
   }
 }

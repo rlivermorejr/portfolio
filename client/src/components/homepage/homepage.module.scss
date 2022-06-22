@@ -182,7 +182,9 @@
     color: white;
   }
 
-  @media screen and (max-width: 1370px) {
+  /* For 1024 Resolution */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
     img.planet1 {
       position: fixed;
       height: 15em;
@@ -297,6 +299,131 @@
       width: 200px;
       margin-top: -100rem;
       margin-left: -0rem;
+      z-index: -3;
+    }
+
+    .skillsList {
+      height: 100%;
+    }
+  }
+
+  /* For 844 Resolution */
+  @media only screen and (min-device-width : 360px) and (max-device-width : 844px) {
+
+    img.planet1 {
+      position: fixed;
+      height: 15em;
+      width: 15em;
+      margin-top: 3rem;
+      margin-left: -3rem;
+      z-index: -2;
+    }
+
+    img.planet2 {
+      position: fixed;
+      height: 150px;
+      width: 150px;
+      margin-top: -240%;
+      margin-left: -12rem;
+      z-index: -2;
+    }
+
+    img.planet3 {
+      position: fixed;
+      height: 50px;
+      width: 50px;
+      margin-top: -250%;
+      margin-left: -20rem;
+      z-index: -3;
+    }
+
+    img.planet4 {
+      position: fixed;
+      height: 100px;
+      width: 100px;
+      margin-top: -50px;
+      margin-left: 40%;
+      z-index: -2;
+    }
+
+    img.galaxy1 {
+      position: fixed;
+      height: 100px;
+      width: 100px;
+      margin-top: 10%;
+      margin-left: 40%;
+      z-index: -3;
+    }
+
+    img.galaxy2 {
+      position: fixed;
+      height: 120px;
+      width: 120px;
+      margin-top: 20%;
+      margin-left: 20%;
+      z-index: -3;
+    }
+
+    img.galaxy3 {
+      position: fixed;
+      height: 250px;
+      width: 220px;
+      margin-top: -80%;
+      margin-left: -40%;
+      z-index: -3;
+    }
+
+    img.blackhole {
+      position: fixed;
+      height: 100px;
+      width: 100px;
+      margin-top: -90px;
+      margin-left: 70%;
+      z-index: -3;
+    }
+
+    img.sun {
+      position: fixed;
+      height: 100px;
+      width: 100px;
+      margin-top: -100px;
+      margin-left: 30px;
+      z-index: -3;
+    }
+
+    img.comet {
+      position: fixed;
+      height: 100px;
+      width: 100px;
+      margin-top: -180px;
+      margin-left: -700px;
+      z-index: -2;
+    }
+
+    img.nebula {
+      position: fixed;
+      height: 90px;
+      width: 240px;
+      margin-top: -65rem;
+      margin-left: -30rem;
+      z-index: -4;
+    }
+
+    img.nebula2 {
+      position: fixed;
+      height: 300px;
+      width: 300px;
+      margin-top: -60rem;
+      margin-left: -75rem;
+      z-index: -4;
+    }
+
+    img.deathstar {
+      position: fixed;
+      height: 200px;
+      width: 200px;
+      margin-top: -120rem;
+      margin-left: -5rem;
       z-index: -3;
     }
   }
